@@ -1,0 +1,3 @@
+select em, last_name, first_name, sex, salaries.salary
+from employees
+INNER JOIN salaries ON employees.em = salaries.SA

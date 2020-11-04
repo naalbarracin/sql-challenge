@@ -1,0 +1,5 @@
+
+select employees.last_name, employees.first_name, departments.dept_no, departments.dept_name, departmentmanager.emp_no 
+from departments
+INNER JOIN departmentmanager ON departments.dept_no = departmentmanager.dept_no
+INNER JOIN employees ON departmentmanager.emp_no = employees.em
